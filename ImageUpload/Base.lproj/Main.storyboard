@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageUpload" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KxO-bG-TKj">
+                                <rect key="frame" x="90" y="159" width="213" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="147" id="5GO-fw-pMv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tnn-Ke-PIZ">
+                                <rect key="frame" x="90" y="423" width="213" height="147"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIq-8o-eZA">
+                                <rect key="frame" x="90" y="334" width="213" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Upload"/>
+                                <connections>
+                                    <action selector="tappedOnUploadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="62G-WY-me2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyy-fL-1lB">
+                                <rect key="frame" x="84" y="644" width="213" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="TransferButton"/>
+                                <connections>
+                                    <action selector="tappedOnUploadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xwP-hq-upe"/>
+                                    <action selector="tappedOntransferButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4FB-SW-Z21"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uyy-fL-1lB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="5Vt-RM-6sw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uyy-fL-1lB" secondAttribute="trailing" constant="96" id="5fs-rR-roe"/>
+                            <constraint firstItem="Tnn-Ke-PIZ" firstAttribute="top" secondItem="sIq-8o-eZA" secondAttribute="bottom" constant="54" id="6jB-05-l7j"/>
+                            <constraint firstItem="uyy-fL-1lB" firstAttribute="top" secondItem="Tnn-Ke-PIZ" secondAttribute="bottom" constant="74" id="APY-CY-LDv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KxO-bG-TKj" secondAttribute="trailing" constant="90" id="Eeg-X3-GvH"/>
+                            <constraint firstItem="Tnn-Ke-PIZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="HAy-2I-Ltg"/>
+                            <constraint firstItem="sIq-8o-eZA" firstAttribute="top" secondItem="KxO-bG-TKj" secondAttribute="bottom" constant="28" id="Hgj-Pz-gFB"/>
+                            <constraint firstItem="KxO-bG-TKj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OE5-9I-5sl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tnn-Ke-PIZ" secondAttribute="trailing" constant="90" id="QgS-6i-JYa"/>
+                            <constraint firstItem="KxO-bG-TKj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="RZK-uI-gdc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uyy-fL-1lB" secondAttribute="bottom" constant="139" id="amy-i3-iyC"/>
+                            <constraint firstItem="sIq-8o-eZA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hBH-gx-bMr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sIq-8o-eZA" secondAttribute="trailing" constant="90" id="tcQ-DI-8tK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainImage" destination="KxO-bG-TKj" id="Rbe-Mk-rku"/>
+                        <outlet property="transferredImage" destination="Tnn-Ke-PIZ" id="51P-GW-Gwc"/>
+                        <outlet property="uploadButton" destination="sIq-8o-eZA" id="E3K-2C-E2x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
